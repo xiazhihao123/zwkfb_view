@@ -5,7 +5,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import zwkfb.view.main
 import zwkfb.view.测试
 
 class MainActivity : AppCompatActivity() {
@@ -19,10 +18,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-
         测试(arrayOf("a", "b", "c"))
-
-        main(args = arrayOf("a", "b", "c"))
 
     }
 }

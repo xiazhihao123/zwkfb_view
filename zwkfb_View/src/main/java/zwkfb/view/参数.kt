@@ -11,3 +11,7 @@ fun 测试2(args: List<String> = emptyList(), a: Int = 0) {
 fun 测试1(vararg args: String) {
     println("参数个数：${args.size}")
 }
+
+fun 测试12(vararg args: String) {
+    println("参数个数：${args.size}")
+}
