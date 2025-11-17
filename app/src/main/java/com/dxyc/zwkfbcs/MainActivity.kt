@@ -22,5 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         测试(arrayOf("a", "b", "c"))
 
+        main(args = arrayOf("a", "b", "c"))
+
     }
 }

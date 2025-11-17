@@ -38,8 +38,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":zwkfb_view"))
-
+    implementation(project(":zwkfb_View"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
