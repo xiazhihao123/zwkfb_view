@@ -22,8 +22,5 @@ class MainActivity : AppCompatActivity() {
 
         测试(arrayOf("a", "b", "c"))
 
-        测试( arrayOf("a", "b", "c"))
-
-        main(arrayOf("a", "b", "c"))
     }
 }
