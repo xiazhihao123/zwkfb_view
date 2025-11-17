@@ -4,6 +4,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        create("release") {
+            storeFile = file("F:\\Android\\key.jks")
+            storePassword = "12345678"
+            keyAlias = "key"
+            keyPassword = "12345678"
+        }
+    }
     namespace = "com.dxyc.zwkfbcs"
     compileSdk {
         version = release(36)
@@ -26,6 +34,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {

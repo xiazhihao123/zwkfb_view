@@ -1,9 +1,20 @@
+@file:Suppress("DEPRECATION")
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("maven-publish")
 }
 
 android {
+    signingConfigs {
+        create("release") {
+            storeFile = file("F:\\Android\\key.jks")
+            storePassword = "12345678"
+            keyAlias = "key"
+            keyPassword = "12345678"
+        }
+    }
     namespace = "zwkfb.view"
     compileSdk {
         version = release(36)
