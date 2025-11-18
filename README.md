@@ -1,4 +1,5 @@
-新版本：[![](https://jitpack.io/v/dxycw/zwkfb_view.svg)](https://jitpack.io/#dxycw/zwkfb_view)
+# zwkfb_view
+[![](https://jitpack.io/v/dxycw/zwkfb_view.svg)](https://jitpack.io/#dxycw/zwkfb_view)
 
 # 项目介绍
 本项目是中文开发的开发包项目，适用于Android开发及View版。
