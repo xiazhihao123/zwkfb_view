@@ -18,6 +18,5 @@ class MainActivity : 应用兼容活动() {
         }
 
 
-
     }
 }

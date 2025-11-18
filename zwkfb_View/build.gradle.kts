@@ -1,15 +1,15 @@
 @file:Suppress("DEPRECATION")
 
-buildscript {
-    dependencies {
-        classpath("com.github.dcendents:android-maven-gradle-plugin:2.1")
-    }
-}
+//buildscript {
+//    dependencies {
+//        classpath("com.github.dcendents:android-maven-gradle-plugin:2.1")
+//    }
+//}
 
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    id("maven-publish")
+//    id("maven-publish")
 }
 
 android {
@@ -51,17 +51,17 @@ android {
     }
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            register<MavenPublication>("release") {
-                groupId = "com.github.dxycw"
-                artifactId = "zwkfb_view"
-                version = "0.0.5"
-            }
-        }
-    }
-}
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            register<MavenPublication>("release") {
+//                groupId = "com.github.dxycw"
+//                artifactId = "zwkfb_view"
+//                version = "0.0.5"
+//            }
+//        }
+//    }
+//}
 
 dependencies {
     implementation(libs.androidx.core.ktx)
