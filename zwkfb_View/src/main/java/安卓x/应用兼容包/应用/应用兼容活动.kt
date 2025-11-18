@@ -17,3 +17,8 @@ open class 应用兼容活动 : AppCompatActivity(){
     }
 
 }
+
+
+fun AppCompatActivity.置内容视图(布局ID: Int)=
+    this.setContentView(布局ID)
+
