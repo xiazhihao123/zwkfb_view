@@ -48,4 +48,5 @@ dependencies {
 # 更新内容
 ## 0.0.6
 1、修复在其他项目中添加依赖库没有的Bug；
+
 2、“AppCompatActivity”窗口添加“置内容视图()”函数；
