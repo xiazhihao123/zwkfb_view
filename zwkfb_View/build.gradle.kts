@@ -1,11 +1,5 @@
 @file:Suppress("DEPRECATION")
 
-//buildscript {
-//    dependencies {
-//        classpath("com.github.dcendents:android-maven-gradle-plugin:2.1")
-//    }
-//}
-
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)

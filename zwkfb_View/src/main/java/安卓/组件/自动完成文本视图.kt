@@ -1,0 +1,39 @@
+package 安卓.组件
+
+import android.annotation.SuppressLint
+import android.content.Context
+import android.content.res.Resources
+import android.util.AttributeSet
+import android.widget.AutoCompleteTextView
+
+/**
+ * 创建时间：2025年11月19日.
+
+ * 版本：0.0.8
+ * @author dxyc
+ */
+@SuppressLint("AppCompatCustomView")
+class 自动完成文本视图 : AutoCompleteTextView {
+    constructor(context: Context?) : super(context)
+    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
+    constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(
+        context,
+        attrs,
+        defStyleAttr
+    )
+
+    constructor(
+        context: Context?,
+        attrs: AttributeSet?,
+        defStyleAttr: Int,
+        defStyleRes: Int,
+    ) : super(context, attrs, defStyleAttr, defStyleRes)
+
+    constructor(
+        context: Context?,
+        attrs: AttributeSet?,
+        defStyleAttr: Int,
+        defStyleRes: Int,
+        popupTheme: Resources.Theme?,
+    ) : super(context, attrs, defStyleAttr, defStyleRes, popupTheme)
+}

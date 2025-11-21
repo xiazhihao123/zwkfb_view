@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+<!--   创建时间：2025年11月20日.-->
+<!--   描述：视图存根，版本：0.0.8-->
+<!--   作者：dxyc-->
+    <declare-styleable name="视图存根">
+        <attr name="android:id" />
+        <attr name="android:layout" format="reference" />
+        <attr name="android:inflatedId" format="reference" />
+    </declare-styleable>
+
 <!--    <declare-styleable name="文本视图">-->
 <!--        -->
 <!--        <attr name="文本" format="string" localizable="suggested" />-->
