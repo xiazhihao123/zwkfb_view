@@ -33,14 +33,14 @@ dependencyResolutionManagement {
 * Groovy 版本：
 ```groovy
 dependencies {
-    implementation 'com.github.dxycw:zwkfb_view:0.0.7'
+    implementation 'com.github.dxycw:zwkfb_view:0.0.8'
 }
 ```
 
 * Kotlin 版本：
 ```kotlin
 dependencies {
-    implementation("com.github.dxycw:zwkfb_view:0.0.7")
+    implementation("com.github.dxycw:zwkfb_view:0.0.8")
 }
 ```
 
