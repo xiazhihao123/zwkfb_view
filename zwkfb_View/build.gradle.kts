@@ -3,7 +3,6 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-//    id("maven-publish")
 }
 
 android {
@@ -37,25 +36,13 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "11"
     }
 }
-
-//afterEvaluate {
-//    publishing {
-//        publications {
-//            register<MavenPublication>("release") {
-//                groupId = "com.github.dxycw"
-//                artifactId = "zwkfb_view"
-//                version = "0.0.5"
-//            }
-//        }
-//    }
-//}
 
 dependencies {
     implementation(libs.androidx.core.ktx)

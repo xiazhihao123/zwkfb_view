@@ -1,23 +1,20 @@
-package 安卓.组件
+@file:Suppress("DEPRECATION")
 
-import android.annotation.SuppressLint
+package 安卓.输入法服务
+
 import android.content.Context
+import android.inputmethodservice.KeyboardView
 import android.util.AttributeSet
-import android.widget.Button
-import android.widget.RemoteViews.RemoteView
 
 /**
- * 创建时间：2025年11月18日.
+ * 创建时间：2025年11月22日.
  *
- * 描述：按钮
+ * 描述：键盘视图
  *
- * 版本：0.0.7
+ * 版本：0.0.9
  * @author dxyc
  */
-@SuppressLint("AppCompatCustomView")
-@RemoteView
-class 按钮 : Button {
-    constructor(context: Context?) : super(context)
+class 键盘视图 : KeyboardView {
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(
         context,

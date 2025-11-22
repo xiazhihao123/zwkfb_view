@@ -1,15 +1,6 @@
 package com.dxyc.zwkfbcs
 
-
-import android.net.Uri
 import android.os.Bundle
-import android.view.View
-import android.view.ViewStub
-import android.widget.Button
-import android.widget.MediaController
-import android.widget.VideoView
-import androidx.activity.ComponentActivity
-import 安卓.视图.视图存根
 import 安卓x.应用兼容包.应用.应用兼容活动
 import 安卓x.应用兼容包.应用.查找视图Id
 import 安卓x.应用兼容包.应用.置内容视图
@@ -17,6 +8,7 @@ import 安卓x.核心.视图.取边距
 import 安卓x.核心.视图.窗口边距兼容
 import 安卓x.核心.视图.视图兼容
 import 安卓x.活动.启用边缘到边缘
+
 
 class MainActivity : 应用兼容活动() {
 

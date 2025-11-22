@@ -15,7 +15,7 @@ import android.widget.Spinner
  * @author dxyc
  */
 @SuppressLint("AppCompatCustomView")
-open class 下拉列表 : Spinner {
+open class 下拉框 : Spinner {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

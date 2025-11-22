@@ -1,22 +1,18 @@
-package 安卓.组件
+package 安卓.应用
 
-import android.annotation.SuppressLint
+import android.app.MediaRouteButton
 import android.content.Context
 import android.util.AttributeSet
-import android.widget.Button
-import android.widget.RemoteViews.RemoteView
 
 /**
- * 创建时间：2025年11月18日.
+ * 创建时间：2025年11月22日.
  *
- * 描述：按钮
+ * 描述：媒体路由按钮
  *
- * 版本：0.0.7
+ * 版本：0.0.9
  * @author dxyc
  */
-@SuppressLint("AppCompatCustomView")
-@RemoteView
-class 按钮 : Button {
+class 媒体路由按钮 : MediaRouteButton {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

@@ -1,18 +1,20 @@
+@file:Suppress("DEPRECATION")
+
 package 安卓.组件
 
 import android.content.Context
 import android.util.AttributeSet
-import android.widget.Toolbar
+import android.widget.ZoomButton
 
 /**
- * 创建时间：2025年11月19日.
+ * 创建时间：2025年11月22日.
  *
- * 描述：工具栏
+ * 描述：缩放按钮
  *
- * 版本：0.0.8
+ * 版本：0.0.9
  * @author dxyc
  */
-class 工具栏 : Toolbar {
+class 缩放按钮 : ZoomButton {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(
