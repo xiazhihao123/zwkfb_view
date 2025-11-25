@@ -27,23 +27,45 @@ open class 视图组 : ViewGroup {
         defStyleRes: Int,
     ) : super(context, attrs, defStyleAttr, defStyleRes)
 
-    override fun onLayout(
-        changed: Boolean,
-        l: Int,
-        t: Int,
-        r: Int,
-        b: Int,
-    ) {
-        布局回调(changed, l, t, r, b)
+    /**
+     * 版本：0.0.7
+     *
+     * 布局回调。
+     */
+    override fun onLayout(changed: Boolean, l: Int, t: Int, r: Int, b: Int,
+    ) { 布局回调(changed, l, t, r, b) }
+
+
+    /**
+     * 版本：0.0.7
+     *
+     * 布局回调。
+     */
+    open fun 布局回调(changed: Boolean, l: Int, t: Int, r: Int, b: Int) {}
+
+    /**
+     * 版本：0.1.0
+     *
+     * 布局参数。
+     */
+    class 布局参数 : ViewGroup.LayoutParams {
+        constructor(c: Context?, attrs: AttributeSet?) : super(c, attrs)
+        constructor(source: LayoutParams?) : super(source)
+        constructor(width: Int, height: Int) : super(width, height)
     }
 
-
-
-    open fun 布局回调(
-        changed: Boolean, l: Int, t: Int, r: Int, b: Int,
-    ) {
-
+    /**
+     * 版本：0.1.0
+     *
+     * 外边框布局参数。
+     */
+    class 外边框布局参数 : ViewGroup.MarginLayoutParams {
+        constructor(c: Context?, attrs: AttributeSet?) : super(c, attrs)
+        constructor(source: LayoutParams?) : super(source)
+        constructor(source: MarginLayoutParams?) : super(source)
+        constructor(width: Int, height: Int) : super(width, height)
     }
+
 
 }
 

@@ -8,13 +8,17 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!-- 视频画面 -->
-<!--    <VideoView-->
-<!--        android:id="@+id/videoView"-->
+<!--    <androidx.fragment.app.FragmentContainerView-->
 <!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_centerInParent="true"/>-->
+<!--        android:layout_height="match_parent"/>-->
 
+<!--    <android.widget.inline.InlineContentView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+<!--    <android.window.SplashScreenView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
 
 
 

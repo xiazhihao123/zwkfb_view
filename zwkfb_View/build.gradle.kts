@@ -45,11 +45,19 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
+    // 核心库
+    api("androidx.core:core-ktx:1.17.0")
+    api("androidx.appcompat:appcompat:1.7.1")
+    api("com.google.android.material:material:1.12.0")
+
+//    implementation(libs.androidx.core.ktx)
+//    implementation(libs.androidx.appcompat)
+//    implementation(libs.material)
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+//    androidTestImplementation(libs.androidx.junit)
+//    androidTestImplementation(libs.androidx.espresso.core)
+
+    // 其他依赖库
+    implementation("com.google.firebase:firebase-crashlytics-buildtools:3.0.6")
 }
 

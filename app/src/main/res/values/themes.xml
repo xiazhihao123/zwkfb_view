@@ -6,4 +6,15 @@
     </style>
 
     <style name="Theme.中文开发包测试" parent="Base.Theme.中文开发包测试" />
+
+    <style name="DialogFullScreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="DialogSlide">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
 </resources>

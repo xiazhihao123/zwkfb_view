@@ -17,12 +17,16 @@ import androidx.annotation.VisibleForTesting
 //================================================================================
 
 /**
+ * 版本：0.0.7
+ *
  * 在平台 API 29 及以上版本中使用的浅色遮罩色。
  */
 @VisibleForTesting
 internal val 默认浅色遮罩色 = Color.argb(0xe6, 0xFF, 0xFF, 0xFF)
 
 /**
+ * 版本：0.0.7
+ *
  * 平台中使用的深色遮罩色。
  */
 @VisibleForTesting

@@ -1,0 +1,39 @@
+package 商业.谷歌.安卓.材质.标签集
+
+import android.content.Context
+import android.util.AttributeSet
+import android.widget.LinearLayout
+
+
+/**
+ * 创建时间：2025年11月24日.
+ *
+ * 描述：标签布局
+ *
+ * 版本：0.1.0
+ * @author dxyc
+ */
+class 标签布局 : TabLayout {
+    constructor(context: Context) : super(context)
+    constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
+    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(
+        context,
+        attrs,
+        defStyleAttr
+    )
+
+    /**
+     * 创建时间：2025年11月24日.
+     *
+     * 描述：标签视图
+     *
+     * 版本：0.1.0
+     */
+    inner class 标签视图 : TabView {
+        constructor(context: Context) : super(context)
+    }
+
+
+}
+
+

@@ -1,6 +1,8 @@
 package com.dxyc.zwkfbcs
 
 import android.os.Bundle
+import androidx.viewpager.widget.ViewPager
+import com.google.android.material.tabs.TabLayout
 import 安卓x.应用兼容包.应用.应用兼容活动
 import 安卓x.应用兼容包.应用.查找视图Id
 import 安卓x.应用兼容包.应用.置内容视图
@@ -22,42 +24,6 @@ class MainActivity : 应用兼容活动() {
             边距
         }
 
-
-
-//        findViewById<Button>(R.id.button).setOnClickListener {
-//            val a = findViewById<ViewStub>(R.id.stub)
-////            a.setInflatedId(R.id.inflated)
-////                a.setLayoutResource(R.layout.aa)
-////            if (a.getLayoutResource() != 0) {
-//                a.inflate()
-////            }
-//
-//        }
-
-//        val vv = findViewById<VideoView>(R.id.videoView)
-//        val url = "android.resource://" + packageName + "/" + R.raw.aaa   // 放 raw/demo.mp4
-//        vv.setVideoURI(Uri.parse(url))
-//
-//        // 1. 创建控制器
-//        val ctrl = MediaController(this)
-//        // 2. 双向绑定
-//        ctrl.setAnchorView(vv)   // 控制器悬浮在 VideoView 区域
-//        vv.setMediaController(ctrl)
-//
-//        /* 3. 自动播放 + 循环 */
-//        vv.setOnPreparedListener {
-//            vv.start()
-//            it.isLooping = true
-//        }
-
-//        /* 4. 全屏切换示例（双击或按钮） */
-//        vv.setOnClickListener { toggleFullScreen() }
-
-
-
-
     }
 
 }
-
-

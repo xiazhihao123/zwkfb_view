@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package 商业.谷歌.安卓.材质.转换
 
 import android.content.Context

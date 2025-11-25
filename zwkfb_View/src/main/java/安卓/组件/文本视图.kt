@@ -2,6 +2,7 @@ package 安卓.组件
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.res.ColorStateList
 import android.util.AttributeSet
 import android.widget.RemoteViews.RemoteView
 import android.widget.TextView
@@ -112,5 +113,50 @@ fun TextView.置文本大小(大小: Float) {
 
 //==============================================================
 
+/**
+ * 创建时间：2025年11月24日.
+ *
+ * 描述：文本颜色
+ *
+ * 版本：0.1.0
+ * @param 颜色 显示的文本颜色。
+ */
+fun TextView.置文本颜色(颜色: Int){ this.setTextColor(颜色) }
+
+//==============================================================
+
+/**
+ * 创建时间：2025年11月24日.
+ *
+ * 描述：文本颜色
+ *
+ * 版本：0.1.0
+ * @param 颜色集 显示的文本颜色。
+ * @return 显示的文本颜色。
+ */
+var TextView.文本颜色: ColorStateList
+    get() = this.getTextColors()
+    set(颜色集) { this.setTextColor(颜色集) }
+
+/**
+ * 创建时间：2025年11月24日.
+ *
+ * 描述：文本颜色
+ *
+ * 版本：0.1.0
+ * @return 显示的文本颜色。
+ */
+fun TextView.取文本颜色(): ColorStateList = this.getTextColors()
+/**
+ * 创建时间：2025年11月24日.
+ *
+ * 描述：文本颜色
+ *
+ * 版本：0.1.0
+ * @param 颜色集 显示的文本颜色。
+ */
+fun TextView.置文本颜色(颜色集: ColorStateList){ this.setTextColor(颜色集) }
+
+//==============================================================
 
 
