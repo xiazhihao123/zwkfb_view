@@ -14,7 +14,7 @@ import android.widget.DigitalClock
  * 版本：0.0.9
  * @author dxyc
  */
-class 数字时钟 : DigitalClock {
+open class 数字时钟 : DigitalClock {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

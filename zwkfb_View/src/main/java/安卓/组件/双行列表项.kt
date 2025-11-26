@@ -14,7 +14,7 @@ import android.widget.TwoLineListItem
  * 版本：0.0.9
  * @author dxyc
  */
-class 双行列表项 : TwoLineListItem {
+open class 双行列表项 : TwoLineListItem {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

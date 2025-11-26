@@ -14,7 +14,7 @@ import android.widget.AbsoluteLayout
  * 版本：0.0.9
  * @author dxyc
  */
-class 绝对布局 : AbsoluteLayout {
+open class 绝对布局 : AbsoluteLayout {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

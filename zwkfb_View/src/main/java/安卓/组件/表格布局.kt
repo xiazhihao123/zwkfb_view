@@ -12,7 +12,7 @@ import android.widget.TableLayout
  * 版本：0.0.8
  * @author dxyc
  */
-class 表格布局 : TableLayout {
+open class 表格布局 : TableLayout {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

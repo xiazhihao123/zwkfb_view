@@ -12,7 +12,7 @@ import android.widget.ViewFlipper
  * 版本：0.0.8
  * @author dxyc
  */
-class 视图翻转器 : ViewFlipper {
+open class 视图翻转器 : ViewFlipper {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

@@ -14,7 +14,7 @@ import android.widget.TabWidget
  * 版本：0.0.9
  * @author dxyc
  */
-class 标签页指示器 : TabWidget {
+open class 标签页指示器 : TabWidget {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

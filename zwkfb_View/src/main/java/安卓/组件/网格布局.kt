@@ -6,11 +6,13 @@ import android.widget.GridLayout
 
 /**
  * 创建时间：2025年11月18日.
-
+ *
+ * 描述：网格布局
+ *
  * 版本：0.0.7
  * @author dxyc
  */
-class 网格布局 : GridLayout {
+open class 网格布局 : GridLayout {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

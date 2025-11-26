@@ -16,7 +16,7 @@ import android.widget.RemoteViews.RemoteView
  */
 @SuppressLint("AppCompatCustomView")
 @RemoteView
-class 按钮 : Button {
+open class 按钮 : Button {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

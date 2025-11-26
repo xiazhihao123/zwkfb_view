@@ -17,7 +17,7 @@ import android.widget.TextView
  */
 @SuppressLint("AppCompatCustomView")
 @RemoteView
-class 文本视图 : TextView {
+open class 文本视图 : TextView {
 
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)

@@ -12,7 +12,7 @@ import android.widget.ScrollView
  * 版本：0.0.8
  * @author dxyc
  */
-class 滚动视图 : ScrollView {
+open class 滚动视图 : ScrollView {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

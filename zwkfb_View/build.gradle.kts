@@ -42,6 +42,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -59,5 +62,8 @@ dependencies {
 
     // 其他依赖库
     implementation("com.google.firebase:firebase-crashlytics-buildtools:3.0.6")
+
+    //下拉刷新框
+    api("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 }
 

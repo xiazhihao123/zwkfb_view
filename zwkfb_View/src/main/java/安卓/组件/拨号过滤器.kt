@@ -14,7 +14,7 @@ import android.widget.DialerFilter
  * 版本：0.0.9
  * @author dxyc
  */
-class 拨号过滤器 : DialerFilter {
+open class 拨号过滤器 : DialerFilter {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

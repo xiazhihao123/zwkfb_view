@@ -12,7 +12,7 @@ import android.widget.StackView
  * 版本：0.0.8
  * @author dxyc
  */
-class 堆叠视图 : StackView {
+open class 堆叠视图 : StackView {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

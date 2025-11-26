@@ -6,11 +6,13 @@ import android.widget.FrameLayout
 
 /**
  * 创建时间：2025年11月18日.
-
+ *
+ * 描述：框架布局
+ *
  * 版本：0.0.7
  * @author dxyc
  */
-class 框架布局 : FrameLayout {
+open class 框架布局 : FrameLayout {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

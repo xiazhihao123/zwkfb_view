@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION")
 
-package 自定义包.系统类
+package 自定义.系统类
 
 import android.app.Activity
 import android.content.Context

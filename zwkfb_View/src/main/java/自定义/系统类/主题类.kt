@@ -1,4 +1,4 @@
-package 自定义包.系统类
+package 自定义.系统类
 
 import android.annotation.SuppressLint
 import android.app.Activity

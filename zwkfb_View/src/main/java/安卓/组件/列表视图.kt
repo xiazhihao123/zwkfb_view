@@ -10,7 +10,7 @@ import android.widget.ListView
  * 版本：0.0.7
  * @author dxyc
  */
-class 列表视图 : ListView {
+open class 列表视图 : ListView {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

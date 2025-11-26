@@ -8,6 +8,8 @@ import android.view.View
 /**
  * 创建时间：2025年11月18日.
  *
+ * 描述：视图。
+ *
  * 版本：0.0.7
  * @author dxyc
  */

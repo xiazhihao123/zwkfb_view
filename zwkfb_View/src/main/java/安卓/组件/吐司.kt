@@ -3,17 +3,8 @@
 package 安卓.组件
 
 import android.content.Context
-import android.graphics.Color
-import android.graphics.Outline
-import android.text.TextUtils
-import android.view.Gravity
 import android.view.View
-import android.view.ViewOutlineProvider
 import android.widget.Toast
-import androidx.core.graphics.toColorInt
-import 安卓.视图.添加视图
-import 安卓.视图.置背景颜色
-import 自定义包.系统类.是否是深色模式
 
 /**
  * 创建时间：2025年11月24日.
@@ -23,7 +14,7 @@ import 自定义包.系统类.是否是深色模式
  * 版本：0.1.0
  * @author dxyc
  */
-class 吐司 :Toast {
+open class 吐司 :Toast {
     constructor(context: Context?) : super(context)
     companion object{
         /**

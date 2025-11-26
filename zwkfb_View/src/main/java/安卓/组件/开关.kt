@@ -14,7 +14,7 @@ import android.widget.Switch
  * @author dxyc
  */
 @SuppressLint("UseSwitchCompatOrMaterialCode")
-class 开关 : Switch {
+open class 开关 : Switch {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

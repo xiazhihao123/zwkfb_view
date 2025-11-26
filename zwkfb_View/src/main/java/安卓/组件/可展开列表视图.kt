@@ -10,7 +10,7 @@ import android.widget.ExpandableListView
  * 版本：0.0.8
  * @author dxyc
  */
-class 可展开列表视图 : ExpandableListView {
+open class 可展开列表视图 : ExpandableListView {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

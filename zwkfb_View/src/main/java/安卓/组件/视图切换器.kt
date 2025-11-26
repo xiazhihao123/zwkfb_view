@@ -12,7 +12,7 @@ import android.widget.ViewSwitcher
  * 版本：0.0.8
  * @author dxyc
  */
-class 视图切换器 : ViewSwitcher {
+open class 视图切换器 : ViewSwitcher {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

@@ -10,7 +10,7 @@ import android.widget.RadioGroup
  * 版本：0.0.8
  * @author dxyc
  */
-class 单选组 : RadioGroup {
+open class 单选组 : RadioGroup {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

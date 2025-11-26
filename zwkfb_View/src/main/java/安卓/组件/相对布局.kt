@@ -12,7 +12,7 @@ import android.widget.RelativeLayout
  * 版本：0.0.8
  * @author dxyc
  */
-class 相对布局 : RelativeLayout {
+open class 相对布局 : RelativeLayout {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

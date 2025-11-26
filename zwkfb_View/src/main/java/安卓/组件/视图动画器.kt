@@ -12,7 +12,7 @@ import android.widget.ViewAnimator
  * 版本：0.0.8
  * @author dxyc
  */
-class 视图动画器 : ViewAnimator {
+open class 视图动画器 : ViewAnimator {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

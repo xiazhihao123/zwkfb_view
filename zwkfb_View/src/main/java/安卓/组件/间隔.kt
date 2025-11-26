@@ -9,11 +9,13 @@ import kotlin.math.min
 
 /**
  * 创建时间：2025年11月19日.
-
+ *
+ * 描述：间隔组件
+ *
  * 版本：0.0.8
  * @author dxyc
  */
-final class 间隔 : View  {
+open class 间隔 : View  {
     constructor(context: Context?) : super(context,null)
     constructor(context: Context?, attrs: AttributeSet?) :
             super(context, attrs,0)

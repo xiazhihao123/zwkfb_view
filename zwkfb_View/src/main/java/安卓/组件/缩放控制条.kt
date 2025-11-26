@@ -14,7 +14,7 @@ import android.widget.ZoomControls
  * 版本：0.0.9
  * @author dxyc
  */
-class 缩放控制条 : ZoomControls {
+open class 缩放控制条 : ZoomControls {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

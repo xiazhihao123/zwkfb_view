@@ -12,7 +12,7 @@ import android.widget.VideoView
  * 版本：0.0.8
  * @author dxyc
  */
-class 视频视图 : VideoView {
+open class 视频视图 : VideoView {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

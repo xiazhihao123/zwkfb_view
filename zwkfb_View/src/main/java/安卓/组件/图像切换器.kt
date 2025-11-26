@@ -10,7 +10,7 @@ import android.widget.ImageSwitcher
  * 版本：0.0.8
  * @author dxyc
  */
-class 图像切换器 : ImageSwitcher {
+open class 图像切换器 : ImageSwitcher {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

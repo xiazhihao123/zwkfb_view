@@ -12,7 +12,7 @@ import android.widget.Chronometer
  * 版本：0.0.8
  * @author dxyc
  */
-class 计时器 : Chronometer {
+open class 计时器 : Chronometer {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

@@ -14,7 +14,7 @@ import android.widget.ToggleButton
  * @author dxyc
  */
 @SuppressLint("AppCompatCustomView")
-class 切换按钮 : ToggleButton {
+open class 切换按钮 : ToggleButton {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

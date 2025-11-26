@@ -12,7 +12,7 @@ import android.widget.TableRow
  * 版本：0.0.8
  * @author dxyc
  */
-class 表格行 : TableRow {
+open class 表格行 : TableRow {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

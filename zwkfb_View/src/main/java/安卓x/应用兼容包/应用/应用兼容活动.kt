@@ -7,7 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 
 /**
  * 创建时间：2025年11月18日.
-
+ *
+ * 描述：应用兼容活动
+ *
  * 版本：0.0.7
  * @author dxyc
  */
@@ -45,14 +47,14 @@ fun AppCompatActivity.置内容视图(布局ID: Int)=
 //================================================================================
 
 /**
- * 版本：0.0.7
+ * 版本：0.1.1
  *
  * 获取视图。
  * @param id 视图ID。
  * @return 视图。
  */
 fun <T : View> AppCompatActivity.查找视图Id(id: Int): T =
-    this.findViewById(id)
+    this.findViewById<T>(id)
 
 //================================================================================
 

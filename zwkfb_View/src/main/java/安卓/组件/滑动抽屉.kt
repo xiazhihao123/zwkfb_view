@@ -14,7 +14,7 @@ import android.widget.SlidingDrawer
  * 版本：0.0.9
  * @author dxyc
  */
-class 滑动抽屉 : SlidingDrawer {
+open class 滑动抽屉 : SlidingDrawer {
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(
         context,

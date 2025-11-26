@@ -6,11 +6,13 @@ import android.widget.QuickContactBadge
 
 /**
  * 创建时间：2025年11月18日.
-
+ *
+ * 描述：快捷联系人徽章
+ *
  * 版本：0.0.7
  * @author dxyc
  */
-class 快捷联系人徽章 : QuickContactBadge {
+open class 快捷联系人徽章 : QuickContactBadge {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

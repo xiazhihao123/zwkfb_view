@@ -14,7 +14,7 @@ import android.widget.RatingBar
  * @author dxyc
  */
 @SuppressLint("AppCompatCustomView")
-class 评分条 : RatingBar {
+open class 评分条 : RatingBar {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

@@ -12,7 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
  * 版本：0.1.0
  * @author dxyc
  */
-class 约束布局 : ConstraintLayout {
+open class 约束布局 : ConstraintLayout {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

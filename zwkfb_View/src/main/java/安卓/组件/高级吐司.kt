@@ -13,7 +13,7 @@ import android.widget.PopupWindow
  * 版本：0.1.0
  * @author dxyc
  */
-class 高级吐司 :PopupWindow{
+open class 高级吐司 :PopupWindow{
     constructor() : super()
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)

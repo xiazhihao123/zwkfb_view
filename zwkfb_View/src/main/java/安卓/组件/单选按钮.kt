@@ -12,7 +12,7 @@ import android.widget.RadioButton
  * @author dxyc
  */
 @SuppressLint("AppCompatCustomView")
-class 单选按钮 : RadioButton {
+open class 单选按钮 : RadioButton {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

@@ -37,7 +37,7 @@ import java.io.InputStream
  * 版本：0.1.0
  * @author dxyc
  */
-class 上下文 : Context {
+open class 上下文 : Context {
     constructor() : super()
 
     override fun bindService(
@@ -626,3 +626,110 @@ class 上下文 : Context {
         TODO("Not yet implemented")
     }
 }
+
+
+//============================================================================
+
+/**
+ * 获取主题
+ *
+ * 版本：0.1.1
+ */
+val Context.主题: Resources.Theme get() = this.theme
+
+/**
+ * 获取主题
+ *
+ * 版本：0.1.1
+ */
+fun Context.取主题(): Resources.Theme = this.getTheme()
+
+/**
+ * 置主题
+ *
+ * 版本：0.1.1
+ */
+fun Context.置主题(主题: Int) = this.setTheme(主题)
+
+//=======================================================================
+
+/**
+ * 获取资源
+ *
+ * 版本：0.1.1
+ */
+val Context.资源: Resources get() = this.resources
+
+/**
+ * 获取资源
+ *
+ * 版本：0.1.1
+ */
+fun Context.取资源(): Resources = this.getResources()
+
+//=======================================================================
+
+/**
+ * 获取包名
+ *
+ * 版本：0.1.1
+ */
+val Context.包名: String get() = this.packageName
+
+/**
+ * 获取包名
+ *
+ * 版本：0.1.1
+ */
+fun Context.取包名(): String = this.getPackageName()
+
+//============================================================================
+
+/**
+ * 获取包
+ *
+ * 版本：0.1.1
+ */
+val Context.包: PackageManager get() = this.packageManager
+
+/**
+ * 获取包
+ *
+ * 版本：0.1.1
+ */
+fun Context.取包(): PackageManager = this.getPackageManager()
+
+
+//========================================================================
+/**
+ * 切换窗口
+ *
+ * 版本：0.1.1
+ */
+fun Context.切换窗口(意图: Intent) = this.startActivity(意图)
+
+/**
+ * 切换窗口
+ *
+ * 版本：0.1.1
+ */
+fun Context.切换窗口(意图: Intent, 保存数据状态: Bundle?) =
+    this.startActivity(意图,保存数据状态)
+
+//========================================================================
+/**
+ * 切换多窗口
+ *
+ * 版本：0.1.1
+ */
+fun Context.切换多窗口(意图: Array<Intent>) = this.startActivities(意图)
+
+/**
+ * 切换多窗口
+ *
+ * 版本：0.1.1
+ */
+fun Context.切换多窗口(意图: Array<Intent>, 保存数据状态: Bundle?) =
+    this.startActivities(意图,保存数据状态)
+
+//============================================================================

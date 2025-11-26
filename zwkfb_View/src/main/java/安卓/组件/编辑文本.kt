@@ -7,12 +7,14 @@ import android.widget.EditText
 
 /**
  * 创建时间：2025年11月18日.
-
+ *
+ * 描述：编辑文本
+ *
  * 版本：0.0.7
  * @author dxyc
  */
 @SuppressLint("AppCompatCustomView")
-class 编辑文本 : EditText {
+open class 编辑文本 : EditText {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

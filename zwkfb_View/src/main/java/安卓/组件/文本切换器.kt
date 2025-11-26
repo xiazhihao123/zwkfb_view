@@ -12,7 +12,7 @@ import android.widget.TextSwitcher
  * 版本：0.0.8
  * @author dxyc
  */
-class 文本切换器 : TextSwitcher {
+open class 文本切换器 : TextSwitcher {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

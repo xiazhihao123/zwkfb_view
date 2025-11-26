@@ -14,7 +14,7 @@ import android.widget.AnalogClock
  * 版本：0.0.9
  * @author dxyc
  */
-class 模拟时钟 : AnalogClock {
+open class 模拟时钟 : AnalogClock {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

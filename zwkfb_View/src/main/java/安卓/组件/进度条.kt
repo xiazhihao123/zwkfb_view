@@ -6,11 +6,13 @@ import android.widget.ProgressBar
 
 /**
  * 创建时间：2025年11月18日.
-
+ *
+ * 描述：进度条组件
+ *
  * 版本：0.0.7
  * @author dxyc
  */
-class 进度条 : ProgressBar {
+open class 进度条 : ProgressBar {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

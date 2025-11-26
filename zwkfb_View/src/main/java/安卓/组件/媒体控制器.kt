@@ -12,7 +12,7 @@ import android.widget.MediaController
  * 版本：0.0.8
  * @author dxyc
  */
-class 媒体控制器 : MediaController {
+open class 媒体控制器 : MediaController {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, useFastForward: Boolean) : super(context, useFastForward)

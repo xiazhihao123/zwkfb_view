@@ -14,7 +14,7 @@ import android.widget.SeekBar
  * @author dxyc
  */
 @SuppressLint("AppCompatCustomView")
-class 拖动条: SeekBar {
+open class 拖动条: SeekBar {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

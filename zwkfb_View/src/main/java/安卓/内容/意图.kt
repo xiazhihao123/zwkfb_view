@@ -12,7 +12,7 @@ import android.net.Uri
  * 版本：0.1.0
  * @author dxyc
  */
-class 意图 :Intent{
+open class 意图 :Intent{
     constructor() : super()
     constructor(packageContext: Context?, cls: Class<*>?) : super(packageContext, cls)
     constructor(o: Intent?) : super(o)

@@ -14,7 +14,7 @@ import android.widget.TabHost
  * 版本：0.0.9
  * @author dxyc
  */
-class 标签页容器 : TabHost {
+open class 标签页容器 : TabHost {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

@@ -12,7 +12,7 @@ import androidx.appcompat.widget.SearchView
  * 版本：0.0.9
  * @author dxyc
  */
-class 搜索视图 : SearchView {
+open class 搜索视图 : SearchView {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

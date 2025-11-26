@@ -12,7 +12,7 @@ import android.widget.TextClock
  * 版本：0.0.8
  * @author dxyc
  */
-class 文本时钟: TextClock {
+open class 文本时钟: TextClock {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
  * 版本：0.0.9
  * @author dxyc
  */
-class 碎片 : Fragment {
+open class 碎片 : Fragment {
     constructor() : super()
     constructor(contentLayoutId: Int) : super(contentLayoutId)
 }

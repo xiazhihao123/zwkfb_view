@@ -12,7 +12,7 @@ import android.widget.TimePicker
  * 版本：0.0.8
  * @author dxyc
  */
-class 时间选择器: TimePicker {
+open class 时间选择器: TimePicker {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(
