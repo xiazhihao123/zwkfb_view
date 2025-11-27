@@ -14,7 +14,7 @@ import androidx.viewpager2.widget.ViewPager2
  * 版本：0.1.0
  * @author dxyc
  */
-class 标签布局 : TabLayout {
+open class 标签布局 : TabLayout {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(
@@ -36,52 +36,197 @@ class 标签布局 : TabLayout {
 
 }
 
+
+//==========================================================================
+
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：置标签文本颜色
+ *
+ * 版本：0.1.2
+ * @param 正常颜色 正常状态下的文本颜色
+ * @param 选中颜色 选中状态下的文本颜色
+ */
+fun com.google.android.material.tabs.TabLayout.置标签文本颜色(正常颜色: Int, 选中颜色: Int) =
+    this.setTabTextColors(正常颜色, 选中颜色)
+
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：置选中标签指示器颜色
+ *
+ * 版本：0.1.2
+ * @param 选中颜色 选中状态下的指示器颜色
+ */
+fun com.google.android.material.tabs.TabLayout.置选中标签指示器颜色(选中颜色: Int) =
+    this.setSelectedTabIndicatorColor(选中颜色)
+
+
+//======================================================================
+
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：是否标签指示器全宽
+ *
+ * 版本：0.1.2
+ */
+var com.google.android.material.tabs.TabLayout.标签指示器全宽: Boolean
+    get() = this.isTabIndicatorFullWidth
+    set(标签指示器全宽) {
+        this.setTabIndicatorFullWidth(标签指示器全宽)
+    }
+
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：是否标签指示器全宽
+ *
+ * 版本：0.1.2
+ */
+fun com.google.android.material.tabs.TabLayout.是否标签指示器全宽(): Boolean =
+    this.isTabIndicatorFullWidth
+
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：置标签指示器全宽
+ *
+ * 版本：0.1.2
+ */
+fun com.google.android.material.tabs.TabLayout.置标签指示器全宽(标签指示器全宽: Boolean) =
+    this.setTabIndicatorFullWidth(标签指示器全宽)
+
+//==========================================================================
+
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：标签文本
+ *
+ * 版本：0.1.2
+ */
+var com.google.android.material.tabs.TabLayout.Tab.文本
+    get() = text
+    set(文本) { text = 文本 }
+
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：取文本
+ *
+ * 版本：0.1.2
+ */
+fun com.google.android.material.tabs.TabLayout.Tab.取文本(): CharSequence? =
+   this.getText()
+
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：置文本
+ *
+ * 版本：0.1.2
+ */
+fun com.google.android.material.tabs.TabLayout.Tab.置文本(文本: CharSequence) =
+    this.setText(文本)
+
+
 //====================================================================================
 
-/**
- * 描述：方向
- *
- * 版本：0.1.1
- */
-var ViewPager2.方向: Int
-    get() = orientation
-    set(方向) { orientation = 方向 }
+
+
+
+//==========================================================================
 
 /**
- * 描述：取方向
+ * 创建时间：2025年11月27日.
  *
- * 版本：0.1.1
+ * 描述：置标签文本颜色
+ *
+ * 版本：0.1.2
+ * @param 正常颜色 正常状态下的文本颜色
+ * @param 选中颜色 选中状态下的文本颜色
  */
-fun ViewPager2.取方向(): Int = getOrientation()
+fun TabLayout.置标签文本颜色(正常颜色: Int, 选中颜色: Int) =
+    this.setTabTextColors(正常颜色, 选中颜色)
+
 /**
- * 描述：置方向
+ * 创建时间：2025年11月27日.
  *
- * 版本：0.1.1
+ * 描述：置选中标签指示器颜色
+ *
+ * 版本：0.1.2
+ * @param 选中颜色 选中状态下的指示器颜色
  */
-fun ViewPager2.置方向(方向: Int) = setOrientation(方向)
+fun TabLayout.置选中标签指示器颜色(选中颜色: Int) =
+    this.setSelectedTabIndicatorColor(选中颜色)
+
+//======================================================================
+
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：是否标签指示器全宽
+ *
+ * 版本：0.1.2
+ */
+var TabLayout.标签指示器全宽: Boolean
+    get() = this.isTabIndicatorFullWidth
+    set(标签指示器全宽) {
+        this.setTabIndicatorFullWidth(标签指示器全宽)
+    }
+
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：是否标签指示器全宽
+ *
+ * 版本：0.1.2
+ */
+fun TabLayout.是否标签指示器全宽(): Boolean = this.isTabIndicatorFullWidth
+
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：置标签指示器全宽
+ *
+ * 版本：0.1.2
+ */
+fun TabLayout.置标签指示器全宽(标签指示器全宽: Boolean) =
+    this.setTabIndicatorFullWidth(标签指示器全宽)
+
+//==========================================================================
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：标签文本
+ *
+ * 版本：0.1.2
+ */
+var TabLayout.Tab.文本
+    get() = text
+    set(文本) { text = 文本 }
+
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：取文本
+ *
+ * 版本：0.1.2
+ */
+fun TabLayout.Tab.取文本(): CharSequence? =
+    this.getText()
+
+/**
+ * 创建时间：2025年11月27日.
+ *
+ * 描述：置文本
+ *
+ * 版本：0.1.2
+ */
+fun TabLayout.Tab.置文本(文本: CharSequence) =
+    this.setText(文本)
+
 
 //====================================================================================
-
-/**
- * 描述：适配器
- *
- * 版本：0.1.1
- */
-var ViewPager2.适配器: Adapter<*>?
-    get() = adapter
-    set(适配器) { adapter = 适配器 }
-
-/**
- * 描述：取适配器
- *
- * 版本：0.1.1
- */
-fun ViewPager2.取适配器(): Adapter<*>? = getAdapter()
-/**
- * 描述：置适配器
- *
- * 版本：0.1.1
- */
-fun ViewPager2.置适配器(适配器: Adapter<*>) = setAdapter(适配器)
-
-

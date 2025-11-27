@@ -12,7 +12,7 @@ import com.google.android.material.circularreveal.coordinatorlayout.CircularReve
  * 版本：0.1.0
  * @author dxyc
  */
-class 圆形揭示协调布局 : CircularRevealCoordinatorLayout {
+open class 圆形揭示协调布局 : CircularRevealCoordinatorLayout {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
 }

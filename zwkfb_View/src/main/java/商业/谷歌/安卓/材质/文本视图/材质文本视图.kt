@@ -14,7 +14,7 @@ import com.google.android.material.textview.MaterialTextView
  * 版本：0.1.0
  * @author dxyc
  */
-class 材质文本视图 : MaterialTextView {
+open class 材质文本视图 : MaterialTextView {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

@@ -12,7 +12,7 @@ import android.view.TextureView
  * 版本：0.0.8
  * @author dxyc
  */
-class 纹理视图: TextureView {
+open class 纹理视图: TextureView {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

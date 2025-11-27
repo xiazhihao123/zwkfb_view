@@ -11,7 +11,7 @@ import android.graphics.Canvas
  * 版本：0.1.0
  * @author dxyc
  */
-class 画布 : Canvas {
+open class 画布 : Canvas {
     constructor() : super()
     constructor(bitmap: Bitmap) : super(bitmap)
 }

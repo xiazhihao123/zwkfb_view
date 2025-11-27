@@ -10,6 +10,6 @@ import android.app.Application
  * 版本：0.1.0
  * @author dxyc
  */
-class 应用程序 : Application{
+open class 应用程序 : Application{
     constructor() : super()
 }

@@ -14,7 +14,7 @@ import android.util.AttributeSet
  * 版本：0.0.9
  * @author dxyc
  */
-class 键盘视图 : KeyboardView {
+open class 键盘视图 : KeyboardView {
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(
         context,

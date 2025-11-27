@@ -12,7 +12,7 @@ import com.google.android.material.divider.MaterialDivider
  * 版本：0.1.0
  * @author dxyc
  */
-class 材质分割线 : MaterialDivider {
+open class 材质分割线 : MaterialDivider {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

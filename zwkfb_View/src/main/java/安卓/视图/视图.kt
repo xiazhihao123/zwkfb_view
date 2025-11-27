@@ -13,7 +13,7 @@ import android.view.View
  * 版本：0.0.7
  * @author dxyc
  */
-class 视图 : View {
+open class 视图 : View {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

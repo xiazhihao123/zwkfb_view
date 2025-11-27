@@ -12,7 +12,7 @@ import com.google.android.material.circularreveal.cardview.CircularRevealCardVie
  * 版本：0.1.0
  * @author dxyc
  */
-class 圆形揭示卡片视图 : CircularRevealCardView {
+open class 圆形揭示卡片视图 : CircularRevealCardView {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

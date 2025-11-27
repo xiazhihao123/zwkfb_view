@@ -12,7 +12,7 @@ import com.google.android.material.bottomappbar.BottomAppBar
  * 版本：0.1.0
  * @author dxyc
  */
-class 底部导航栏 : BottomAppBar {
+open class 底部导航栏 : BottomAppBar {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

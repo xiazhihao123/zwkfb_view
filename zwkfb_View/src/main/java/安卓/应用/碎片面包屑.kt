@@ -14,7 +14,7 @@ import android.util.AttributeSet
  * 版本：0.0.9
  * @author dxyc
  */
-class 碎片面包屑 :FragmentBreadCrumbs {
+open class 碎片面包屑 :FragmentBreadCrumbs {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

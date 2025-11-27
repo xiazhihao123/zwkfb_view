@@ -12,7 +12,7 @@ import com.google.android.material.appbar.CollapsingToolbarLayout
  * 版本：0.1.0
  * @author dxyc
  */
-class 折叠式标题栏布局 : CollapsingToolbarLayout {
+open class 折叠式标题栏布局 : CollapsingToolbarLayout {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

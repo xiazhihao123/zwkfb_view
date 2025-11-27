@@ -17,7 +17,7 @@ import androidx.appcompat.widget.TintTypedArray
  * 版本：0.1.0
  * @author dxyc
  */
-class 标签项 : TabItem {
+open class 标签项 : TabItem {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

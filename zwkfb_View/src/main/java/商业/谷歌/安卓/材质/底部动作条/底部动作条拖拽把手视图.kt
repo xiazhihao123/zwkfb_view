@@ -12,7 +12,7 @@ import com.google.android.material.bottomsheet.BottomSheetDragHandleView
  * 版本：0.1.0
  * @author dxyc
  */
-class 底部动作条拖拽把手视图 : BottomSheetDragHandleView {
+open class 底部动作条拖拽把手视图 : BottomSheetDragHandleView {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

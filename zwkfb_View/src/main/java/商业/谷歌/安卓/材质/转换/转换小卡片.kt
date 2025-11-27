@@ -14,7 +14,7 @@ import com.google.android.material.transformation.TransformationChildCard
  * 版本：0.0.9
  * @author dxyc
  */
-class 转换小卡片 : TransformationChildCard {
+open class 转换小卡片 : TransformationChildCard {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

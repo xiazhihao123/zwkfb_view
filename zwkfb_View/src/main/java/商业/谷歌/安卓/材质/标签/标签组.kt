@@ -12,7 +12,7 @@ import com.google.android.material.chip.ChipGroup
  * 版本：0.1.0
  * @author dxyc
  */
-class 标签组 : ChipGroup {
+open class 标签组 : ChipGroup {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

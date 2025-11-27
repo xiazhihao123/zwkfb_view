@@ -12,7 +12,7 @@ import com.google.android.material.appbar.MaterialToolbar
  * 版本：0.1.0
  * @author dxyc
  */
-class 材质标题栏 : MaterialToolbar {
+open class 材质标题栏 : MaterialToolbar {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

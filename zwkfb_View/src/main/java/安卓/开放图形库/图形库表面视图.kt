@@ -12,7 +12,7 @@ import android.util.AttributeSet
  * 版本：0.1.0
  * @author dxyc
  */
-class 图形库表面视图 : GLSurfaceView {
+open class 图形库表面视图 : GLSurfaceView {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

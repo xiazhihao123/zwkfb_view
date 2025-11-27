@@ -12,7 +12,7 @@ import android.util.AttributeSet
  * 版本：0.0.9
  * @author dxyc
  */
-class 媒体路由按钮 : MediaRouteButton {
+open class 媒体路由按钮 : MediaRouteButton {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

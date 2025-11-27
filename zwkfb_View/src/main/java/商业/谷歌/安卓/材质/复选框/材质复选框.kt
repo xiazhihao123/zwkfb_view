@@ -12,7 +12,7 @@ import com.google.android.material.checkbox.MaterialCheckBox
  * 版本：0.1.0
  * @author dxyc
  */
-class 材质复选框 : MaterialCheckBox {
+open class 材质复选框 : MaterialCheckBox {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

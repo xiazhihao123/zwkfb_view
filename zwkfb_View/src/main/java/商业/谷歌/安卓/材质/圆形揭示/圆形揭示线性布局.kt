@@ -12,7 +12,7 @@ import com.google.android.material.circularreveal.CircularRevealLinearLayout
  * 版本：0.1.0
  * @author dxyc
  */
-class 圆形揭示线性布局 : CircularRevealLinearLayout {
+open class 圆形揭示线性布局 : CircularRevealLinearLayout {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 }

@@ -12,7 +12,7 @@ import com.google.android.material.appbar.AppBarLayout
  * 版本：0.1.0
  * @author dxyc
  */
-class 应用栏布局 : AppBarLayout {
+open class 应用栏布局 : AppBarLayout {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

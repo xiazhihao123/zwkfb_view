@@ -14,7 +14,7 @@ import com.google.android.material.transformation.TransformationChildLayout
  * 版本：0.0.9
  * @author dxyc
  */
-class 转换小布局 : TransformationChildLayout {
+open class 转换小布局 : TransformationChildLayout {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
 }

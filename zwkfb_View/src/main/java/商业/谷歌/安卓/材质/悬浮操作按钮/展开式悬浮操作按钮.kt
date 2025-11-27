@@ -12,7 +12,7 @@ import com.google.android.material.floatingactionbutton.ExtendedFloatingActionBu
  * 版本：0.1.0
  * @author dxyc
  */
-class 展开式悬浮操作按钮 : ExtendedFloatingActionButton {
+open class 展开式悬浮操作按钮 : ExtendedFloatingActionButton {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

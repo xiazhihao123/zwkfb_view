@@ -12,7 +12,7 @@ import com.google.android.material.textfield.TextInputEditText
  * 版本：0.1.0
  * @author dxyc
  */
-class 文本输入编辑文本 : TextInputEditText {
+open class 文本输入编辑文本 : TextInputEditText {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

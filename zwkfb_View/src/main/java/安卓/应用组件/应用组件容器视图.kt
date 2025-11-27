@@ -11,7 +11,7 @@ import android.content.Context
  * 版本：0.1.0
  * @author dxyc
  */
-class 应用组件容器视图 : AppWidgetHostView {
+open class 应用组件容器视图 : AppWidgetHostView {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, animationIn: Int, animationOut: Int) : super(
         context,

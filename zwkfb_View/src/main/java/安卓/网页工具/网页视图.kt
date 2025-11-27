@@ -13,7 +13,7 @@ import android.webkit.WebView
  * 版本：0.0.7
  * @author dxyc
  */
-class 网页视图 : WebView {
+open class 网页视图 : WebView {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

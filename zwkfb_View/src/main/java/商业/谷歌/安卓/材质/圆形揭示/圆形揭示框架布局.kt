@@ -12,7 +12,7 @@ import com.google.android.material.circularreveal.CircularRevealFrameLayout
  * 版本：0.1.0
  * @author dxyc
  */
-class 圆形揭示框架布局 : CircularRevealFrameLayout {
+open class 圆形揭示框架布局 : CircularRevealFrameLayout {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
 }

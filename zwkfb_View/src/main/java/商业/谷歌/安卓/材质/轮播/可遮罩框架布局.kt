@@ -12,7 +12,7 @@ import com.google.android.material.carousel.MaskableFrameLayout
  * 版本：0.1.0
  * @author dxyc
  */
-class 可遮罩框架布局 : MaskableFrameLayout {
+open class 可遮罩框架布局 : MaskableFrameLayout {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(
