@@ -12,7 +12,7 @@ import androidx.cardview.widget.CardView
  * 版本：0.0.9
  * @author dxyc
  */
-class 卡片视图 : CardView {
+open class 卡片视图 : CardView {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

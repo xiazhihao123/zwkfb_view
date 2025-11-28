@@ -12,7 +12,7 @@ import androidx.core.widget.ContentLoadingProgressBar
  * 版本：0.0.9
  * @author dxyc
  */
-class 内容加载进度条 : ContentLoadingProgressBar {
+open class 内容加载进度条 : ContentLoadingProgressBar {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
 }

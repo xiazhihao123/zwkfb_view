@@ -12,7 +12,7 @@ import androidx.appcompat.widget.AppCompatToggleButton
  * 版本：0.0.9
  * @author dxyc
  */
-class 应用兼容切换按钮 : AppCompatToggleButton {
+open class 应用兼容切换按钮 : AppCompatToggleButton {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

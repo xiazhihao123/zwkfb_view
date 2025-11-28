@@ -12,7 +12,7 @@ import androidx.appcompat.widget.AppCompatEditText
  * 版本：0.0.9
  * @author dxyc
  */
-class 应用兼容编辑文本 : AppCompatEditText {
+open class 应用兼容编辑文本 : AppCompatEditText {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

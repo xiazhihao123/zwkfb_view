@@ -12,7 +12,7 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout
  * 版本：0.1.0
  * @author dxyc
  */
-class 协调布局 : CoordinatorLayout {
+open class 协调布局 : CoordinatorLayout {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

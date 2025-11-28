@@ -12,7 +12,7 @@ import androidx.appcompat.widget.ActionMenuView
  * 版本：0.0.9
  * @author dxyc
  */
-class 操作菜单视图 : ActionMenuView {
+open class 操作菜单视图 : ActionMenuView {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
 }

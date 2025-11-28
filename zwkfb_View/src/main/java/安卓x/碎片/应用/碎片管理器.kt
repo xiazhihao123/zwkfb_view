@@ -11,7 +11,7 @@ import androidx.fragment.app.FragmentTransaction
  * 版本：0.1.0
  * @author dxyc
  */
-class 碎片管理器 : FragmentManager {
+open class 碎片管理器 : FragmentManager {
     constructor() : super()
 }
 

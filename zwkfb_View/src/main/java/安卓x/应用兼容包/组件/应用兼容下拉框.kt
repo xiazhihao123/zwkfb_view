@@ -13,7 +13,7 @@ import androidx.appcompat.widget.AppCompatSpinner
  * 版本：0.0.9
  * @author dxyc
  */
-class 应用兼容下拉框 : AppCompatSpinner {
+open class 应用兼容下拉框 : AppCompatSpinner {
     constructor(context: Context) : super(context)
     constructor(context: Context, mode: Int) : super(context, mode)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)

@@ -10,13 +10,13 @@ class 基础碎片状态适配器: 碎片状态适配器 {
         this.数据 = 数据
     }
 
-//    override fun 取项目数量(): Int { return 数据.size }
-//
-//    override fun 创建碎片(索引: Int): Fragment {
-//        return when(索引){
-//            in 0 until 数据.size -> 数据[索引]
-//            else -> 数据[0]
-//        }
-//    }
+    override fun 取项目数量(): Int { return 数据.size }
+
+    override fun 创建碎片(索引: Int): Fragment {
+        return when(索引){
+            in 0 until 数据.size -> 数据[索引]
+            else -> 数据[0]
+        }
+    }
 
 }

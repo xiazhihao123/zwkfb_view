@@ -70,3 +70,8 @@ fun Activity.按两次返回桌面(信息: CharSequence = "再按一次返回桌
         第一次点击时间 = System.currentTimeMillis()
     } else { 返回桌面() } //返回桌面指令
 }
+
+
+
+
+

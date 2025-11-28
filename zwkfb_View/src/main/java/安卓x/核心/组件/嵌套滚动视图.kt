@@ -12,7 +12,7 @@ import androidx.core.widget.NestedScrollView
  * 版本：0.0.9
  * @author dxyc
  */
-class 嵌套滚动视图 : NestedScrollView {
+open class 嵌套滚动视图 : NestedScrollView {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

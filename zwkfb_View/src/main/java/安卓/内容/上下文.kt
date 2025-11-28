@@ -690,14 +690,14 @@ fun Context.取包名(): String = this.getPackageName()
  *
  * 版本：0.1.1
  */
-val Context.包: PackageManager get() = this.packageManager
+val Context.包管理器: PackageManager get() = this.packageManager
 
 /**
  * 获取包
  *
  * 版本：0.1.1
  */
-fun Context.取包(): PackageManager = this.getPackageManager()
+fun Context.取包管理器(): PackageManager = this.getPackageManager()
 
 
 //========================================================================

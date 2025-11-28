@@ -40,6 +40,14 @@ import androidx.core.view.ViewCompat
 import androidx.core.widget.NestedScrollView
 import java.lang.ref.WeakReference
 
+/**
+ * 创建时间：2025年11月23日.
+ *
+ * 描述：对话框控制器
+ *
+ * 版本：0.0.9
+ * @author dxyc
+ */
 internal class 对话框控制器(
     private val mContext: Context,
     val mDialog: AppCompatDialog,
@@ -776,6 +784,14 @@ internal class 对话框控制器(
         button.setLayoutParams(params)
     }
 
+    /**
+     * 创建时间：2025年11月23日.
+     *
+     * 描述：回收列表视图
+     *
+     * 版本：0.0.9
+     * @author dxyc
+     */
     open class 回收列表视图 @JvmOverloads constructor(
         context: Context,
         attrs: AttributeSet? = null

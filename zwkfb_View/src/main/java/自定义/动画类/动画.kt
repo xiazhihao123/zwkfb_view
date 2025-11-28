@@ -3,6 +3,7 @@ package 自定义.动画类
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ValueAnimator
+import android.animation.ValueAnimator.AnimatorUpdateListener
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.res.ColorStateList
@@ -10,8 +11,11 @@ import android.graphics.drawable.Drawable
 import android.graphics.drawable.RippleDrawable
 import android.view.MotionEvent
 import android.view.View
+import android.view.ViewGroup
 import android.view.animation.AccelerateDecelerateInterpolator
+import android.view.animation.Animation
 import android.view.animation.OvershootInterpolator
+import android.view.animation.RotateAnimation
 import androidx.core.graphics.drawable.toDrawable
 import androidx.core.graphics.toColorInt
 import 安卓.应用.窗口切换动画
@@ -75,6 +79,172 @@ object 动画类 {
                 else -> return@置触摸回调监听事件 false // 对于其他事件，返回false
             }
         }
+    }
+
+    fun 布局单击波纹效果(): Drawable {
+        val stateList = arrayOf<IntArray?>(
+            intArrayOf(android.R.attr.state_pressed),
+            intArrayOf(android.R.attr.state_focused),
+            intArrayOf(android.R.attr.state_activated),
+            intArrayOf()
+        )
+        val normalColor = "#303F9F".toColorInt() // 蓝色
+        val pressedColor = "#9b9b9b".toColorInt() // 粉色 //FF4081
+        val stateColorList = intArrayOf(
+            pressedColor,
+            pressedColor,
+            pressedColor,
+            normalColor
+        )
+        val colorStateList = ColorStateList(stateList, stateColorList)
+        return RippleDrawable(colorStateList, null, null)
+    }
+
+    object 旋转动画 {
+        fun 组件中心旋转动画(
+            v: View,
+            动画时间: Long,
+            初始角度: Float,
+            旋转角度: Float,
+            是否停留在执行完的状态: Boolean
+        ) {
+            val rotate = RotateAnimation(
+                初始角度, 旋转角度, Animation.RELATIVE_TO_SELF,
+                0.5f, Animation.RELATIVE_TO_SELF, 0.5f
+            )
+            if (动画时间 >= 0) {
+                rotate.setDuration(动画时间)
+            }
+            rotate.fillAfter = 是否停留在执行完的状态
+            v.startAnimation(rotate)
+        }
+    }
+
+
+    //展开收起动画
+    object 展开收起动画 {
+        // 展开
+        fun 展开布局(view: View, 动画时间: Long) {
+            // 测量视图的高度
+            measureViewHeight(view)
+            // 设置初始高度为0
+            view.layoutParams.height = 0
+            view.visibility = View.VISIBLE
+
+            // 展开动画
+            val valueAnimator = ValueAnimator.ofInt(0, view.measuredHeight)
+            valueAnimator.addUpdateListener(AnimatorUpdateListener { animation: ValueAnimator? ->
+                val animatedValue = animation!!.getAnimatedValue() as Int
+                val layoutParams = view.layoutParams
+                layoutParams.height = animatedValue
+                view.setLayoutParams(layoutParams)
+            })
+            valueAnimator.addListener(object : AnimatorListenerAdapter() {
+                override fun onAnimationEnd(animation: Animator) {
+                    // 动画结束后恢复视图的高度
+                    view.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
+                    view.requestLayout()
+                }
+            })
+            valueAnimator.setDuration(动画时间)
+            valueAnimator.start()
+        }
+
+        // 折叠
+        fun 收起布局(view: View, 动画时间: Long) {
+            // 测量视图的高度
+            val initialHeight: Int = measureViewHeight(view)
+
+            val valueAnimator = ValueAnimator.ofInt(initialHeight, 0)
+            valueAnimator.addUpdateListener(AnimatorUpdateListener { animation: ValueAnimator? ->
+                view.layoutParams.height = animation!!.getAnimatedValue() as Int
+                view.requestLayout()
+            })
+            valueAnimator.addListener(object : Animator.AnimatorListener {
+                override fun onAnimationStart(animation: Animator) {
+                }
+
+                override fun onAnimationEnd(animation: Animator) {
+                    view.visibility = View.GONE
+                    view.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
+                }
+
+                override fun onAnimationCancel(animation: Animator) {
+                }
+
+                override fun onAnimationRepeat(animation: Animator) {
+                } // 其他监听器方法...
+            })
+            valueAnimator.setDuration(动画时间)
+            valueAnimator.start()
+        }
+
+        // 辅助方法，用于测量视图的高度
+        private fun measureViewHeight(view: View): Int {
+            val widthSpec =
+                View.MeasureSpec.makeMeasureSpec(view.width, View.MeasureSpec.EXACTLY)
+            val heightSpec = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
+            view.measure(widthSpec, heightSpec)
+            return view.measuredHeight
+        } //        private static int 高度 = 0;
+        //
+        //        //展开
+        //        public static void 展开布局(final View view, long 动画时间) {
+        //            view.measure(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        //            //final int targetHeight = view.getMeasuredHeight();
+        //
+        //            view.getLayoutParams().height = 0;
+        //            view.setVisibility(View.VISIBLE);
+        //
+        //            // 展开动画
+        //            ValueAnimator valueAnimator = ValueAnimator.ofInt(0, 高度);
+        //            valueAnimator.addUpdateListener(animation -> {
+        //                int animatedValue = (int) animation.getAnimatedValue();
+        //                ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
+        //                layoutParams.height = animatedValue;
+        //                view.setLayoutParams(layoutParams);
+        //            });
+        //            // 设置动画监听器
+        //            valueAnimator.addListener(new AnimatorListenerAdapter() {
+        //                @Override
+        //                public void onAnimationEnd(Animator animation) {
+        //                    // 动画结束后恢复视图的高度
+        //                    view.getLayoutParams().height = 高度;
+        //                    view.requestLayout();
+        //                }
+        //            });
+        //            valueAnimator.setDuration(动画时间);
+        //            valueAnimator.start();
+        //        }
+        //
+        //        //折叠
+        //        public static void 收起布局(final View view, long 动画时间) {
+        //            高度 = view.getMeasuredHeight();
+        //            //final int initialHeight = view.getMeasuredHeight();
+        //
+        //            ValueAnimator valueAnimator = ValueAnimator.ofInt(高度, 0);
+        //            valueAnimator.addUpdateListener(animation -> {
+        //                view.getLayoutParams().height = (Integer) animation.getAnimatedValue();
+        //                view.requestLayout();
+        //            });
+        //            valueAnimator.addListener(new Animator.AnimatorListener() {
+        //                @Override
+        //                public void onAnimationStart(@NonNull Animator animation) {
+        //                }
+        //                @Override
+        //                public void onAnimationEnd(@NonNull Animator animation) {
+        //                    view.setVisibility(View.GONE);
+        //                }
+        //                @Override
+        //                public void onAnimationCancel(@NonNull Animator animation) {
+        //                }
+        //                @Override
+        //                public void onAnimationRepeat(@NonNull Animator animation) {
+        //                }
+        //            });
+        //            valueAnimator.setDuration(动画时间);
+        //            valueAnimator.start();
+        //        }
     }
 
 }

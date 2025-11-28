@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package 安卓x.碎片.应用
 
 import androidx.fragment.app.Fragment

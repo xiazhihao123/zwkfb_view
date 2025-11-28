@@ -12,7 +12,7 @@ import androidx.viewpager.widget.PagerTabStrip
  * 版本：0.1.0
  * @author dxyc
  */
-class 分页器标签栏 : PagerTabStrip {
+open class 分页器标签栏 : PagerTabStrip {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
 }

@@ -12,7 +12,7 @@ import androidx.appcompat.widget.AppCompatRatingBar
  * 版本：0.0.9
  * @author dxyc
  */
-class 应用兼容评分条 : AppCompatRatingBar {
+open class 应用兼容评分条 : AppCompatRatingBar {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

@@ -22,11 +22,11 @@ abstract class 基础碎片<T: ViewBinding> : 碎片(){
 
     protected abstract val 视图组件: T
 
-//    override fun 创建视图回调(布局解析器: LayoutInflater, 容器: ViewGroup?, 保存数据状态: Bundle?): View? {
-//        碎片创建完成()
-//        return 视图组件.root
-//    }
-//
-//    open fun 碎片创建完成() {}
+    override fun 创建视图回调(布局解析器: LayoutInflater, 容器: ViewGroup?, 保存实例状态: Bundle?): View? {
+        碎片创建完成()
+        return 视图组件.root
+    }
+
+    open fun 碎片创建完成() {}
 
 }

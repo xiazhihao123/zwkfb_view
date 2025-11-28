@@ -14,7 +14,7 @@ import androidx.fragment.app.FragmentTabHost
  * 版本：0.0.9
  * @author dxyc
  */
-class 碎片标签页容器 : FragmentTabHost {
+open class 碎片标签页容器 : FragmentTabHost {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
 }

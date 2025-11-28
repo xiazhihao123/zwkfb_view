@@ -13,7 +13,7 @@ import androidx.core.view.insets.ProtectionLayout
  * 版本：0.0.9
  * @author dxyc
  */
-class 保护布局 : ProtectionLayout {
+open class 保护布局 : ProtectionLayout {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

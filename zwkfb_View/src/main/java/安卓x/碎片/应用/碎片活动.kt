@@ -11,7 +11,7 @@ import androidx.fragment.app.FragmentManager
  * 版本：0.1.0
  * @author dxyc
  */
-class 碎片活动 : FragmentActivity {
+open class 碎片活动 : FragmentActivity {
     constructor() : super()
     constructor(内容布局Id: Int) : super(内容布局Id)
 }

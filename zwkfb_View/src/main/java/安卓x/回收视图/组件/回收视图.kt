@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
  * 版本：0.1.0
  * @author dxyc
  */
-class 回收视图 : RecyclerView {
+open class 回收视图 : RecyclerView {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

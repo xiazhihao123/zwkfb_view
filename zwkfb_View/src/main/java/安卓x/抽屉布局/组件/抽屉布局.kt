@@ -12,7 +12,7 @@ import androidx.drawerlayout.widget.DrawerLayout
  * 版本：0.1.0
  * @author dxyc
  */
-class 抽屉布局 : DrawerLayout {
+open class 抽屉布局 : DrawerLayout {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

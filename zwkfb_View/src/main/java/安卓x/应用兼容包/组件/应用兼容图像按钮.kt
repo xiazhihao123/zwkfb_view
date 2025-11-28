@@ -12,7 +12,7 @@ import androidx.appcompat.widget.AppCompatImageButton
  * 版本：0.0.9
  * @author dxyc
  */
-class 应用兼容图像按钮 : AppCompatImageButton {
+open class 应用兼容图像按钮 : AppCompatImageButton {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

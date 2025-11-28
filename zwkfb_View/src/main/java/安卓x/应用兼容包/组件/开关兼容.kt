@@ -12,7 +12,7 @@ import androidx.appcompat.widget.SwitchCompat
  * 版本：0.0.9
  * @author dxyc
  */
-class 开关兼容 : SwitchCompat {
+open class 开关兼容 : SwitchCompat {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

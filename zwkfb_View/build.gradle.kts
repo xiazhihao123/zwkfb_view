@@ -65,5 +65,11 @@ dependencies {
 
     //下拉刷新框
     api("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+
+    // ImmersionBar沉浸式状态栏
+    api("com.geyifeng.immersionbar:immersionbar:3.2.2")
+
+    // OkHttp3 网络请求库
+    api("com.squareup.okhttp3:okhttp:5.3.0")
 }
 

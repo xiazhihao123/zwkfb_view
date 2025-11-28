@@ -14,7 +14,7 @@ import 安卓x.视图分页器.组件.适配器
  * 版本：0.1.0
  * @author dxyc
  */
-class 视图翻页 : ViewPager {
+open class 视图翻页 : ViewPager {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
 }

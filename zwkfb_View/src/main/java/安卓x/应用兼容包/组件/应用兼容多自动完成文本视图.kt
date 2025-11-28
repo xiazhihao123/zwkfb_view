@@ -12,7 +12,7 @@ import androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
  * 版本：0.0.9
  * @author dxyc
  */
-class 应用兼容多自动完成文本视图 : AppCompatMultiAutoCompleteTextView {
+open class 应用兼容多自动完成文本视图 : AppCompatMultiAutoCompleteTextView {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

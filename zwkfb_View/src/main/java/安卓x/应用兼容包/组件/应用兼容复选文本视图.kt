@@ -12,7 +12,7 @@ import androidx.appcompat.widget.AppCompatCheckedTextView
  * 版本：0.0.9
  * @author dxyc
  */
-class 应用兼容复选文本视图 : AppCompatCheckedTextView {
+open class 应用兼容复选文本视图 : AppCompatCheckedTextView {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

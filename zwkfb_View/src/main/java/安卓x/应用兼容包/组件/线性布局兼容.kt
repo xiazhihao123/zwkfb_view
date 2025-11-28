@@ -12,7 +12,7 @@ import androidx.appcompat.widget.LinearLayoutCompat
  * 版本：0.0.9
  * @author dxyc
  */
-class 线性布局兼容 : LinearLayoutCompat {
+open class 线性布局兼容 : LinearLayoutCompat {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(

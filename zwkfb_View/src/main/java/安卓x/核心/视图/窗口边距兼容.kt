@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
  * 版本：0.0.7
  * @author dxyc
  */
-class 窗口边距兼容 : WindowInsetsCompat {
+open class 窗口边距兼容 : WindowInsetsCompat {
     constructor(src: WindowInsetsCompat?) : super(src)
 
     /**
