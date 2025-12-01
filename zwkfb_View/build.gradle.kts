@@ -45,13 +45,14 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
 }
 
 dependencies {
     // 核心库
     api("androidx.core:core-ktx:1.17.0")
     api("androidx.appcompat:appcompat:1.7.1")
-    api("com.google.android.material:material:1.12.0")
+    api("com.google.android.material:material:1.13.0")
 
 //    implementation(libs.androidx.core.ktx)
 //    implementation(libs.androidx.appcompat)
@@ -70,6 +71,8 @@ dependencies {
     api("com.geyifeng.immersionbar:immersionbar:3.2.2")
 
     // OkHttp3 网络请求库
-    api("com.squareup.okhttp3:okhttp:5.3.0")
-}
+    api("com.squareup.okhttp3:okhttp:5.3.2")
 
+
+
+}

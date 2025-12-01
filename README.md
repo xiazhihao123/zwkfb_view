@@ -33,14 +33,14 @@ dependencyResolutionManagement {
 * Groovy 版本：
 ```groovy
 dependencies {
-    implementation 'com.github.dxycw:zwkfb_view:0.1.3'
+    implementation 'com.github.dxycw:zwkfb_view:0.1.4'
 }
 ```
 
 * Kotlin 版本：
 ```kotlin
 dependencies {
-    implementation("com.github.dxycw:zwkfb_view:0.1.3")
+    implementation("com.github.dxycw:zwkfb_view:0.1.4")
 }
 ```
 
@@ -51,14 +51,22 @@ dependencies {
 ## 官方依赖库
 * androidx.core:core-ktx:1.17.0 (能)
 * androidx.appcompat:appcompat:1.7.1 (能)
-* com.google.android.material:material:1.12.0 (能)
+* com.google.android.material:material:1.13.0 (能)
 * com.google.firebase:firebase-crashlytics-buildtools:3.0.6 (不能)
 ## 其他依赖库
 * androidx.swiperefreshlayout:swiperefreshlayout:1.1.0 (能) (在0.1.1版本添加)
 * com.geyifeng.immersionbar:immersionbar:3.2.2 (能) (在0.1.3版本添加)
-* com.squareup.okhttp3:okhttp:5.3.0 (能) (在0.1.3版本添加)
+* com.squareup.okhttp3:okhttp:5.3.2 (能) (在0.1.3版本添加)
 
 # 更新内容
+##  0.1.4
+
+* 新增“材质按钮组”、“材质分割按钮”、“停靠标题栏布局”、“悬浮标题栏布局”、“加载指示器”组件；
+* 更新material库为“1.13.0”版本；[material（1.13.0版本）更新内容]([Release 1.13.0 · material-components/material-components-android](https://github.com/material-components/material-components-android/releases/tag/1.13.0))
+* 修复material更新“1.13.0”版本后TabLayout报错的Bug；
+* 更新okhttp3库为“5.3.2”版本；
+
+
 ##  0.1.3
 
 * 新增 “组件活动”、“对话框碎片”、“应用兼容对话框碎片”、“底部面板对话框碎片”、“底部面板对话框”、“材质警告对话框构建器”、“对话框”、“警告对话框”、“倒计时器”、“定时任务”、“对话框碎片”、"媒体播放器"、“构建”组件；
