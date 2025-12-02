@@ -1,8 +1,6 @@
 package com.dxyc.zwkfbcs
 
 import android.os.Bundle
-import android.widget.Button
-import 商业.谷歌.安卓.材质.提示栏.提示栏
 import 安卓.视图.置内边距
 import 安卓.视图.置单击回调监听事件
 import 安卓x.应用兼容包.应用.应用兼容活动
@@ -26,11 +24,18 @@ class MainActivity : 应用兼容活动() {
             边距
         }
 
-        查找视图Id<Button>(R.id.bt1).置单击回调监听事件{
-            提示栏.make(it, "欢迎使用",1).show()
+        查找视图Id<android.widget.Button>(R.id.bt1).置单击回调监听事件{
+            商业.谷歌.安卓.材质.时间选择器.材质时间选择器.构建器()
+                .setHour(12)
+                .setMinute(30)
+                .setTitleText("选择时间")
+                .build()
+                .show(supportFragmentManager, "timePicker")
+
         }
 
 
     }
+
 
 }

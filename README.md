@@ -33,14 +33,14 @@ dependencyResolutionManagement {
 * Groovy 版本：
 ```groovy
 dependencies {
-    implementation 'com.github.dxycw:zwkfb_view:0.1.4'
+    implementation 'com.github.dxycw:zwkfb_view:0.1.5'
 }
 ```
 
 * Kotlin 版本：
 ```kotlin
 dependencies {
-    implementation("com.github.dxycw:zwkfb_view:0.1.4")
+    implementation("com.github.dxycw:zwkfb_view:0.1.5")
 }
 ```
 
@@ -57,15 +57,24 @@ dependencies {
 * androidx.swiperefreshlayout:swiperefreshlayout:1.1.0 (能) (在0.1.1版本添加)
 * com.geyifeng.immersionbar:immersionbar:3.2.2 (能) (在0.1.3版本添加)
 * com.squareup.okhttp3:okhttp:5.3.2 (能) (在0.1.3版本添加)
+* com.google.code.gson:gson:2.13.2 (能) (在0.1.5版本添加)
+* io.noties.markwon:core:4.6.2 (能) (在0.1.5版本添加)
 
 # 更新内容
+##  0.1.5
+
+* 新增 “碎片容器”,"碎片管理器"、“对话框标题”、“警告对话框布局”、“警告对话框”、“字符选择对话框”、“日期选择对话框”、“应用兼容对话框”、“时间选择对话框”、“材质样式日期选择对话框”、“侧滑面板对话框”、“进度对话框”、“列表碎片”、“报告碎片”、“网页视图碎片”、“材质时间选择器”组件；
+* 新增 “碎片容器”类添加“查找视图Id回调()”、“有视图回调()”事件;
+* 新增 “gson”、“markwon”依赖库；
+* 新增 MySQL数据库jar包；
+* 重写 MaterialTimePicker类；
+
 ##  0.1.4
 
 * 新增“材质按钮组”、“材质分割按钮”、“停靠标题栏布局”、“悬浮标题栏布局”、“加载指示器”组件；
 * 更新material库为“1.13.0”版本；[material（1.13.0版本）更新内容]([Release 1.13.0 · material-components/material-components-android](https://github.com/material-components/material-components-android/releases/tag/1.13.0))
 * 修复material更新“1.13.0”版本后TabLayout报错的Bug；
 * 更新okhttp3库为“5.3.2”版本；
-
 
 ##  0.1.3
 

@@ -61,6 +61,8 @@ dependencies {
 //    androidTestImplementation(libs.androidx.junit)
 //    androidTestImplementation(libs.androidx.espresso.core)
 
+    api(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar", "*.jar"))))
+
     // 其他依赖库
     implementation("com.google.firebase:firebase-crashlytics-buildtools:3.0.6")
 
@@ -73,6 +75,10 @@ dependencies {
     // OkHttp3 网络请求库
     api("com.squareup.okhttp3:okhttp:5.3.2")
 
+    // Json解析,是 Google 官方出品的 Java/Kotlin JSON 解析库 Gson 的 2.13.2 版本，用于把 JSON 字符串 ↔ Java/Kotlin 对象 之间做 序列化 / 反序列化。
+    api("com.google.code.gson:gson:2.13.2")
 
+    // Markdown,md解析
+    api("io.noties.markwon:core:4.6.2")
 
 }
