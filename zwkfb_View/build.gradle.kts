@@ -54,9 +54,9 @@ dependencies {
     api("androidx.appcompat:appcompat:1.7.1")
     api("com.google.android.material:material:1.13.0")
 
-//    implementation(libs.androidx.core.ktx)
-//    implementation(libs.androidx.appcompat)
-//    implementation(libs.material)
+    api("androidx.activity:activity:1.12.1")
+    api("androidx.constraintlayout:constraintlayout:2.2.1")
+
     testImplementation(libs.junit)
 //    androidTestImplementation(libs.androidx.junit)
 //    androidTestImplementation(libs.androidx.espresso.core)

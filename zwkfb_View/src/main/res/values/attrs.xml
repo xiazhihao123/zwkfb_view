@@ -16,4 +16,11 @@
 <!--        -->
 <!--    </declare-styleable>-->
 
+    <declare-styleable name="回弹框架布局">
+        <attr name="滚动方向">
+            <enum name="竖向" value="0"/>
+            <enum name="横向" value="1"/>
+        </attr>
+    </declare-styleable>
+
 </resources>

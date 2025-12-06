@@ -2,17 +2,16 @@ package 安卓x.约束布局.组件
 
 import android.content.Context
 import android.util.AttributeSet
-import androidx.constraintlayout.widget.Guideline
+import androidx.constraintlayout.widget.ReactiveGuide
 
 /**
- * 创建时间：2025年11月26日.
+ * 创建时间：2025年12月5日.
  *
- * 描述：指南
+ * 描述：反应指南
  *
- * 版本：0.1.1
- * @author dxyc
+ * 版本：0.1.6
  */
-open class 指南 : Guideline {
+open class 反应引导 : ReactiveGuide {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(

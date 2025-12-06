@@ -20,6 +20,18 @@ import 自定义.系统类.是否为手机
 import 自定义.系统类.是否处于横屏
 import 自定义.系统类.是否是深色模式
 
+
+//=====================================================================
+
+fun Activity.状态栏沉浸设置() {
+    状态栏沉浸式.初始化沉浸式(this).状态栏导航栏透明().状态栏字体图标自动深色模式(!是否是深色模式)
+        .导航栏图标自动深色模式(!是否是深色模式).刷新()
+    if (是否为手机()) {
+        if (是否处于横屏()) { 隐藏状态栏导航栏() }
+        else { 显示状态栏导航栏() }
+    }
+}
+
 //=====================================================================
 
 fun Activity.隐藏状态栏和导航栏() {
@@ -47,7 +59,6 @@ fun Activity.隐藏状态栏和导航栏() {
 
 //=====================================================================
 
-
 fun Activity.隐藏状态栏导航栏() {
     WindowCompat.setDecorFitsSystemWindows(window, false) // 设置内容
     val windowInsetsController = WindowCompat.getInsetsController(window, window.decorView) // 获取控制器对象
@@ -55,7 +66,6 @@ fun Activity.隐藏状态栏导航栏() {
     windowInsetsController.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE // 设置状态栏和导航栏的显示方式
     window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
 }
-
 
 fun Activity.显示状态栏导航栏() {
     WindowCompat.setDecorFitsSystemWindows(window, true)
@@ -68,16 +78,6 @@ fun Activity.显示状态栏导航栏() {
 
 //=====================================================================
 
-fun Activity.状态栏沉浸设置() {
-    状态栏沉浸式.初始化沉浸式(this).状态栏导航栏透明().状态栏字体图标自动深色模式(!this.是否是深色模式)
-        .导航栏图标自动深色模式(!this.是否是深色模式).刷新()
-    if (this.是否为手机()) {
-        if (this.是否处于横屏()) { 隐藏状态栏导航栏() }
-        else { 显示状态栏导航栏() }
-    }
-}
-
-//=====================================================================
 fun Activity.隐藏状态栏() {
     // 隐藏状态栏
     val window = this.window // 获取窗口对象
@@ -97,6 +97,7 @@ fun Activity.显示状态栏() {
     windowInsetsController.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
 }
 
+//=====================================================================
 
 fun Activity.隐藏导航栏() {
     // 隐藏导航栏
@@ -128,6 +129,8 @@ fun Activity.导航栏颜色(颜色: Int) {
     this.window.navigationBarColor = 颜色
 }
 
+//=====================================================================
+
 fun Activity.置状态栏字体颜色为深色模式(值: Boolean) {
     val decorView = this.window.decorView
     if (值) {
@@ -148,6 +151,8 @@ fun Activity.置导航栏图标颜色为深色模式(值: Boolean) {
     }
 }
 
+//=====================================================================
+
 fun Activity.用DisplayCutout获取导航栏高度(): Int {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
         val windowInsets = this.window.decorView.getRootWindowInsets()
@@ -158,7 +163,9 @@ fun Activity.用DisplayCutout获取导航栏高度(): Int {
     return 0
 }
 
+//=====================================================================
 
+@SuppressLint("DiscouragedApi", "InternalInsetResource")
 fun Activity.用资源文件获取导航栏高度(): Int {
     val hasMenuKey = ViewConfiguration.get(this).hasPermanentMenuKey()
     if (!hasMenuKey) {
@@ -171,6 +178,8 @@ fun Activity.用资源文件获取导航栏高度(): Int {
     return 0
 }
 
+//=====================================================================
+
 fun Activity.获取导航栏高度(): Int {
     val prefs = this.getSharedPreferences("preferences", Context.MODE_PRIVATE)
     var height = prefs.getInt("navigation_bar_height", -1)
@@ -181,7 +190,9 @@ fun Activity.获取导航栏高度(): Int {
     return height
 }
 
+//=====================================================================
 
+@SuppressLint("DiscouragedApi", "InternalInsetResource")
 fun Activity.calculateNavigationBarHeight(): Int {
     val hasMenuKey = ViewConfiguration.get(this).hasPermanentMenuKey()
     if (!hasMenuKey) {
@@ -193,3 +204,5 @@ fun Activity.calculateNavigationBarHeight(): Int {
     }
     return 0
 }
+
+//=====================================================================

@@ -6,8 +6,8 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.core.net.toUri
 import 商业.谷歌.安卓.材质.对话框.材质警告对话框构建器
+import 安卓.应用.创建
 import 安卓.应用.显示
-import 安卓.应用.置标题
 import 安卓.应用.警告对话框
 import 自定义.网络类.下载器.浏览器文件下载
 
@@ -23,21 +23,15 @@ object 对话框类 {
     ) {
         警告对话框.构建器(上下文).setTitle("下载")
             .setMessage("是否下载") //设置对话框的按钮
-            .setNegativeButton(
-                "立即下载",
-                DialogInterface.OnClickListener { dialog: DialogInterface?, which: Int ->
-                    浏览器文件下载(上下文, 下载链接, 用户代理, 内容处理, 文件类型)
-                })
-            .setPositiveButton(
-                "浏览器下载",
-                DialogInterface.OnClickListener { dialog: DialogInterface?, which: Int ->
-                    上下文.startActivity(Intent(Intent.ACTION_VIEW, 下载链接?.toUri()))
-                })
-            .setNeutralButton(
-                "取消",
-                DialogInterface.OnClickListener { dialog: DialogInterface?, which: Int ->
-                    dialog!!.dismiss()
-                }).create().show()
+            .setNegativeButton("立即下载") { dialog: DialogInterface?, which: Int ->
+                浏览器文件下载(上下文, 下载链接, 用户代理, 内容处理, 文件类型)
+            }
+            .setPositiveButton("浏览器下载") { dialog: DialogInterface?, which: Int ->
+                上下文.startActivity(Intent(Intent.ACTION_VIEW, 下载链接?.toUri()))
+            }
+            .setNeutralButton("取消") { dialog: DialogInterface?, which: Int ->
+                dialog!!.dismiss()
+            }.创建().显示()
     }
 
     @SuppressLint("UnsafeImplicitIntentLaunch")
@@ -50,22 +44,16 @@ object 对话框类 {
     ) {
         材质警告对话框构建器(上下文).setTitle("下载")
             .setMessage("是否下载") //设置对话框的按钮
-            .setNegativeButton(
-                "立即下载",
-                DialogInterface.OnClickListener { dialog: DialogInterface?, which: Int ->
-                    //下载器.浏览器文件下载(上下文,下载链接);//,用户代理,内容处理,文件类型);
-                    浏览器文件下载(上下文, 下载链接, 用户代理, 内容处理, 文件类型)
-                })
-            .setNeutralButton(
-                "浏览器下载",
-                DialogInterface.OnClickListener { dialog: DialogInterface?, which: Int ->
-                    上下文.startActivity(Intent(Intent.ACTION_VIEW, 下载链接?.toUri()))
-                })
-            .setPositiveButton(
-                "取消",
-                DialogInterface.OnClickListener { dialog: DialogInterface?, which: Int ->
-                    dialog!!.dismiss()
-                }).show()
+            .setNegativeButton("立即下载") { dialog: DialogInterface?, which: Int ->
+                //下载器.浏览器文件下载(上下文,下载链接);//,用户代理,内容处理,文件类型);
+                浏览器文件下载(上下文, 下载链接, 用户代理, 内容处理, 文件类型)
+            }
+            .setNeutralButton("浏览器下载") { dialog: DialogInterface?, which: Int ->
+                上下文.startActivity(Intent(Intent.ACTION_VIEW, 下载链接?.toUri()))
+            }
+            .setPositiveButton("取消") { dialog: DialogInterface?, which: Int ->
+                dialog!!.dismiss()
+            }.show()
     }
 
 //    @SuppressLint("UnsafeImplicitIntentLaunch")
