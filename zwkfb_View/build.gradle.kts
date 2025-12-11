@@ -52,7 +52,7 @@ dependencies {
     // 核心库
     api("androidx.core:core-ktx:1.17.0")
     api("androidx.appcompat:appcompat:1.7.1")
-    api("com.google.android.material:material:1.13.0")
+    api("com.google.android.material:material:1.13.0") // 1.14.0-alpha07
 
     api("androidx.activity:activity:1.12.1")
     api("androidx.constraintlayout:constraintlayout:2.2.1")
@@ -74,11 +74,87 @@ dependencies {
 
     // OkHttp3 网络请求库
     api("com.squareup.okhttp3:okhttp:5.3.2")
+//    api("com.squareup.okio:okio:3.16.4")
 
     // Json解析,是 Google 官方出品的 Java/Kotlin JSON 解析库 Gson 的 2.13.2 版本，用于把 JSON 字符串 ↔ Java/Kotlin 对象 之间做 序列化 / 反序列化。
     api("com.google.code.gson:gson:2.13.2")
 
     // Markdown,md解析
     api("io.noties.markwon:core:4.6.2")
+
+    //=====================================================================
+
+//    // 使用 ExoPlayer 播放媒体
+//    api("androidx.media3:media3-exoplayer:1.8.0")
+
+//    // 支持使用 ExoPlayer 播放 DASH
+//    api("androidx.media3:media3-exoplayer-dash:1.8.0")
+//    // 支持使用 ExoPlayer 播放 HLS
+//    api("androidx.media3:media3-exoplayer-hls:1.8.0")
+//    // 支持 ExoPlayer 的 SmoothStreaming 播放
+//    api("androidx.media3:media3-exoplayer-smoothstreaming:1.8.0")
+//    // 支持使用 ExoPlayer 进行 RTSP 播放
+//    api("androidx.media3:media3-exoplayer-rtsp:1.8.0")
+//    // 要在 ExoPlayer 中支持 MIDI 播放(请参阅附加的依赖项要求 https://github.com/androidx/media/blob/release/libraries/decoder_midi/README.md)
+//    api("androidx.media3:media3-exoplayer-midi:1.8.0")
+//    // 使用 ExoPlayer 结合互动媒体广告 SDK 插入广告
+//    api("androidx.media3:media3-exoplayer-ima:1.8.0")
+//
+//    // 使用 Cronet 网络堆栈加载数据
+//    api("androidx.media3:media3-datasource-cronet:1.8.0")
+    // 使用 OkHttp 网络堆栈加载数据
+//    api("androidx.media3:media3-datasource-okhttp:1.8.0")
+//    // 使用 librtmp 加载数据
+//    api("androidx.media3:media3-datasource-rtmp:1.8.0")
+//
+//    // 使用 Compose 构建媒体播放界面
+//    api("androidx.media3:media3-ui-compose:1.8.0")
+    // 用于使用 Views 构建媒体播放 UI的功能。
+//    api("androidx.media3:media3-ui:1.8.0")
+    // 用于使用 Jetpack Compose 构建媒体播放 UI的功能。
+//    api("androidx.media3:media3-ui-compose:1.8.0")
+//    // 用于使用 Jetpack Leanback 库为 Android TV 构建媒体播放 UI的功能。
+//    api("androidx.media3:media3-ui-leanback:1.8.0")
+//
+//    // 用于公开和控制媒体会话的功能。
+//    api("androidx.media3:media3-session:1.8.0")
+//
+//    // 用于从媒体容器中提取数据的功能。
+//    api("androidx.media3:media3-extractor:1.8.0")
+//
+//    // 用于与 Cast（投屏）集成的功能。
+//    api("androidx.media3:media3-cast:1.8.0")
+//
+//    // 用于使用 Jetpack WorkManager 调度 ExoPlayer 的后台操作的功能。
+//    api("androidx.media3:media3-exoplayer-workmanager:1.8.0")
+//
+//    // 用于转换媒体文件的功能。
+//    api("androidx.media3:media3-transformer:1.8.0")
+//
+//    // 用于在视频帧上应用特效的功能。
+//    api("androidx.media3:media3-effect:1.8.0")
+//
+//    // 用于混流（muxing）媒体文件的功能。
+//    api("androidx.media3:media3-muxer:1.8.0")
+
+    // 用于测试媒体组件（包括 ExoPlayer 组件）的实用工具
+//    api("androidx.media3:media3-test-utils:1.8.0") // 不行
+    // 通过 Robolectric 测试媒体组件（包括 ExoPlayer 组件）的实用工具
+//    api("androidx.media3:media3-test-utils-robolectric:1.8.0") // 不行
+
+//    // 读写媒体容器的通用功能
+//    api("androidx.media3:media3-container:1.8.0")
+//    // 媒体数据库组件的通用功能
+//    api("androidx.media3:media3-database:1.8.0")
+//    // 媒体解码器的通用功能
+//    api("androidx.media3:media3-decoder:1.8.0")
+//    // 加载数据的通用功能
+//    api("androidx.media3:media3-datasource:1.8.0")
+//    // 跨多个媒体库使用的通用功能
+//    api("androidx.media3:media3-common:1.8.0")
+//    // Kotlin 专用通用功能
+//    api("androidx.media3:media3-common-ktx:1.8.0")
+
+    //=====================================================================
 
 }
